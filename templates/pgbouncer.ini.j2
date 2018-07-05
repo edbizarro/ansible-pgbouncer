@@ -130,6 +130,7 @@ client_login_timeout = {{ pgbouncer_client_login_timeout }}
 {% for database in pgbouncer_databases %}
 {{ database.dbname }} = {% for option, value in database.options.items() %}
 {{ option }}={{ value }}
+
 {%- if not loop.last %} {% endif %}
 {% endfor %}
 {% endfor %}
