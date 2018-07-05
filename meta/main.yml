@@ -1,13 +1,21 @@
 galaxy_info:
-  author: Eduardo Bizarro <edbizarro@gmail.com>
+  author: edbizarro
   description: Installs and configures PgBouncer
-  license: Apache-2.0
+  license: MIT
   min_ansible_version: 2.0
   platforms:
+    - name: Ubuntu
+      versions:
+        - all
     - name: Debian
       versions:
         - wheezy
         - jessie
         - stretch
-  galaxy_tags: []
+  galaxy_tags:
+    - database
+    - postgres
+    - postgresql
+    - rdbms
+    - pgbouncer
 dependencies: []
