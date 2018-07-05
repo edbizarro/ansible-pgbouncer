@@ -14,8 +14,21 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+      become: yes
+
+    roles:
+    - role: edbizarro.pgbouncer
+      pgbouncer_databases:
+        - dbname: testing
+          options:
+            host: localhost
+            port: 5432
+            user: testing
+            password: 123456
+      pgbouncer_users:
+        - username: testing
+          password: 123456
+
 
 License
 -------

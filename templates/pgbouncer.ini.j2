@@ -18,6 +18,7 @@ unix_socket_dir = {{ pgbouncer_unix_socket_dir }}
 ; any, trust, plain, crypt, md5
 auth_type = {{ pgbouncer_auth_type }}
 auth_file = {{ pgbouncer_auth_file }}
+{% if pgbouncer_auth_hba_file %}auth_hba_file = {{ pgbouncer_auth_hba_file }}{% endif %}
 
 ; When server connection is released back to pool:
 ;   session      - after client disconnects

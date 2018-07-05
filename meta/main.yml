@@ -1,5 +1,5 @@
 galaxy_info:
-  author: The SilverLogic
+  author: Eduardo Bizarro <edbizarro@gmail.com>
   description: Installs and configures PgBouncer
   license: Apache-2.0
   min_ansible_version: 2.0
